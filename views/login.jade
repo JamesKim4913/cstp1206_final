@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Login
+    link(rel='stylesheet' href='/stylesheets/userform.css')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', rel='stylesheet') 
+  body
+    .userform
+      h1 Login
+      form(method='post' action='/login')
+        p
+          | What is your username?
+          input(type='text' name='username' value='' placeholder='Username')
+        p
+          | Silently type in your password?
+          input(type='password' name='password' value='' placeholder='Password')
+        p.submit
+          input(type='submit' name='login' value='Login')
